@@ -42,8 +42,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 
-LIBS += -L$$PWD/lib/ -lavutil \
-        -L$$PWD/lib/ -lswresample
+LIBS += -L$$PWD/lib/ -lavutil-56 \
+        -L$$PWD/lib/ -lswresample-3
 
 INCLUDEPATH += $$PWD/include
 DEPENDPATH += $$PWD/include
